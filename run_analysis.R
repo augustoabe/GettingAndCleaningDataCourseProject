@@ -36,3 +36,4 @@ tidyData[,2] <- as.character(tidyData[,2])
 for( i in 1:6 ){
         tidyData[,2] <- sub( actlabels[i,1], actlabels[i,2], tidyData[,2] )
 }
+write.table(tidyData, file = "tidyData.txt", row.names = FALSE)
